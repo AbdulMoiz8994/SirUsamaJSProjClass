@@ -3,8 +3,8 @@ function check(){
 //    get all documents
     const option1=document.getElementById('q1_a1');
     // we do not need both element 
-    // const option2=document.getElementById('q1_a2');
-    // const option3=document.getElementById('q1_a3');
+    const option2=document.getElementById('q1_a2');
+    const option3=document.getElementById('q1_a3');
     // const btn=document.querySelector('.btn')
 
 // make th variable to increase the score when the ans is correct
@@ -13,42 +13,54 @@ let score=0
 
    if(option1.checked == true ){
      score++
-     alert('Your Question 1  is correct')
+    //  alert('Your Question 1  is correct')
    }else{
-    alert('Your Question 1 is wrong')
+    // alert('Your Question 1 is wrong')
    }
 
 //    condition 2 check
-//    const quest2_option1=document.getElementById('q2_a1')
-//    const quest2_option2=document.getElementById('q2_a2')
+   const quest2_option1=document.getElementById('q2_a1')
+   const quest2_option2=document.getElementById('q2_a2')
    const quest2_option3=document.getElementById('q2_a3')
  if(quest2_option3.checked == true){
      score++
-     alert('Your Question 2 is correct')
+    //  alert('Your Question 2 is correct')
  }else{
-    alert('Your Question 2 is wrong')
+    // alert('Your Question 2 is wrong')
    }
 
 //    alert(score)
-//    const quest3_option1=document.getElementById('q3_a1')
-//    const quest3_option2=document.getElementById('q3_a2')
+   const quest3_option1=document.getElementById('q3_a1')
+   const quest3_option2=document.getElementById('q3_a2')
    const quest3_option3=document.getElementById('q3_a3')
    if(quest3_option3.checked == true){
       score++ 
-      alert('Your Question 3 is correct') 
+    //   alert('Your Question 3 is correct') 
    }else{
-    alert('Your Question 3 is wrong')
+    // alert('Your Question 3 is wrong')
    }
 
    const quest4_option1=document.getElementById('q4_a1')
-//    const quest4_option2=document.getElementById('q4_a2')
-//    const quest4_option3=document.getElementById('q4_a3')
+   const quest4_option2=document.getElementById('q4_a2')
+   const quest4_option3=document.getElementById('q4_a3')
    if(quest4_option1.checked == true){
     score++ 
-    alert('Your Question 4 is correct') 
+    // alert('Your Question 4 is correct') 
  }else{
-  alert('Your Question 4 is wrong')
+//   alert('Your Question 4 is wrong')
  }
-alert(score)
+
+if(option1.checked || option2.checked || option3.checked){
+    alert(`The Total Score is ${score} out of 4`)
+    if(quest2_option3.checked || quest2_option1.checked || quest2_option2.checked){
+        if(quest3_option1.checked || quest3_option2.checked || quest3_option3.checked){
+            if(quest4_option1.checked || quest4_option2.checked || quest4_option3.checked){
+            }
+        }
+    }
+}else{
+    alert('Please fill the MCQs')
+}
+
 
 }
