@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <div class="container">
+         <h1>Quiz Application</h1>
+       <form>
+           <fieldset>
+               <legend>Question One</legend>
+               <p>Q: what is the output of 2+10</p>
+               <input type="radio" name="math_quiz" id="q1_a1">
+               <label for="q1_a1">12</label>
+               <input type="radio" name="math_quiz" id="q1_a2">
+               <label for="q1_a2">15</label>
+                <input type="radio" name="math_quiz" id="q1_a3">
+               <label for="q1_a3">8</label>
+           </fieldset>
+           <fieldset>
+            <legend>Question Two</legend>
+            <p>Q: what is the output of 7*7</p>
+            <input type="radio" name="math_second" id="q2_a1">
+            <label for="q2_a1">44</label>
+            <input type="radio" name="math_second" id="q2_a2">
+            <label for="q2_a2">77</label>
+             <input type="radio" name="math_second" id="q2_a3">
+            <label for="q2_a3">49</label>
+        </fieldset>
+        <fieldset>
+            <legend>Question Three</legend>
+            <p>Q: what is the JavaScript</p>
+            <input type="radio" name="language" id="q3_a1">
+            <label for="q3_a1">FrameWork</label>
+            <input type="radio" name="language" id="q3_a2">
+            <label for="q3_a2">Library</label>
+             <input type="radio" name="language" id="q3_a3">
+            <label for="q3_a3">Programming Language</label>
+        </fieldset>
+        <fieldset>
+            <legend>Question Four</legend>
+            <p>Q: what is the React</p>
+            <input type="radio" name="lib" id="q4_a1">
+            <label for="q4_a1">Library</label>
+            <input type="radio" name="lib" id="q4_a2">
+            <label for="q4_a2">language</label>
+             <input type="radio" name="lib" id="q4_a3">
+            <label for="q4_a3">RunTime</label>
+        </fieldset>
+        <button class="btn" onclick="check()">Submit</button>
+       </form>
+     </div>  
+<script src="/script.js"></script>
+</body>
+</html>
