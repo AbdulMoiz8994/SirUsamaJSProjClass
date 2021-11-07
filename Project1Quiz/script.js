@@ -52,15 +52,25 @@ let score=0
 
 if(option1.checked || option2.checked || option3.checked){
     alert(`The Total Score is ${score} out of 4`)
-    if(quest2_option3.checked || quest2_option1.checked || quest2_option2.checked){
-        if(quest3_option1.checked || quest3_option2.checked || quest3_option3.checked){
-            if(quest4_option1.checked || quest4_option2.checked || quest4_option3.checked){
-            }
-        }
-    }
+}else if(quest2_option3.checked || quest2_option1.checked || quest2_option2.checked){
+    alert(`The Total Score is ${score} out of 4`)
+           
+}else if(quest3_option1.checked || quest3_option2.checked || quest3_option3.checked){
+    alert(`The Total Score is ${score} out of 4`)
+}else  if(quest4_option1.checked || quest4_option2.checked || quest4_option3.checked){
+    alert(`The Total Score is ${score} out of 4`)
 }else{
     alert('Please fill the MCQs')
 }
+   
+        // alert(`The Total Score is ${score} out of 4`)
+        
+            // alert(`The Total Score is ${score} out of 4`)
+           
+        // }
+    // }
+
+
 
 
 }
