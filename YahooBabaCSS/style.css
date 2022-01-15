@@ -1,0 +1,16 @@
+.mainDiv{
+    width: 50%;
+    column-count: 3;
+    column-rule-style: solid;
+}
+.mainDiv h1{
+    column-span: all;
+    /* column-span: none; */
+    /* color: transparent;
+    -webkit-background-clip: text;
+    background-image: url('./Screenshot\ from\ 2021-11-20\ 17-41-43.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 250px; */
+}
